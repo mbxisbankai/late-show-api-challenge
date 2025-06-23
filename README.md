@@ -138,7 +138,6 @@ Response
 ## 🔗 GitHub Repository
 
 <a href="https://github.com/mbxisbankai/late-show-api-challenge">
-  <img src="image-1.png" alt="GitHub Logo" width="30" />
+  <img src="server/assets/image-1.png" alt="GitHub Logo" width="30" />
 </a>
-
 
