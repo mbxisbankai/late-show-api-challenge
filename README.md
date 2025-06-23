@@ -20,5 +20,54 @@ A RESTful API built with Flask, PostgreSQL, and JWT Authentication to manage gue
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/late-show-api.git
-cd late-show-api/server
+git clone git@github.com:mbxisbankai/late-show-api-challenge.git
+cd late-show-api/
+```
+
+### 2. Create a virtual environment
+
+```bash
+pipenv install && pipenv shell
+```
+
+### 3. PostgreSQL setup
+- Make sure PostgreSQL is installed and running on your machine and run:
+```bash
+sudo -i -u postgres
+psql
+```
+```psql
+CREATE USER <user> WITH PASSWORD <password>;
+CREATE DATABASE <database> OWNER <user>;
+GRANT ALL PRIVILEGES ON DATABASE <database> TO <user>;
+```
+
+### 4. Create a .env file in /server
+```env
+SECRET_KEY=your_flask_secret_key
+JWT_SECRET_KEY=your_jwt_secret
+DATABASE_URL=postgresql://youruser:yourpassword@localhost/late_show_db
+```
+
+## ▶️ Running the Project
+
+Go to /server and run:
+```bash
+flask db init
+flask db migrate -m "Initial migration"
+flask db upgrade head
+```
+
+Make sure to export the environment variables
+```bash
+export FLASK_APP=app.py
+export FLASK_RUN_PORT=5555
+export FLASK_ENV=development
+```
+
+Seed the database from the root of the project
+```bash
+python -m server.seed
+```
+
+
