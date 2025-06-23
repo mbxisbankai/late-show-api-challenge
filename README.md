@@ -136,4 +136,6 @@ Response
 ![Example Response](/server/assets/Pasted%20image.png)
 
 ## 🔗 GitHub Repository
-![Github Link](https://github.com/mbxisbankailate-show-api-challenge "Github Repository")
+
+[![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)](https://github.com/mbxisbankai/late-show-api-challenge)
+
