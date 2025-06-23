@@ -137,5 +137,5 @@ Response
 
 ## 🔗 GitHub Repository
 
-[![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)](https://github.com/mbxisbankai/late-show-api-challenge)
+[![GitHub Logo](image.png)](https://github.com/mbxisbankai/late-show-api-challenge)
 
