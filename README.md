@@ -102,7 +102,7 @@ python -m server.seed
 }
 ```
 ## Token Usage
-- For all protected routes, add this header:
+For all protected routes, add this header:
 ![Authorization Header](/server/assets/Screenshot%20from%202025-06-23%2010-24-52.png "Bearer Token")
 
 ## 📡 Route List & Sample Usage
