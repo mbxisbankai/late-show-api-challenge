@@ -70,4 +70,42 @@ Seed the database from the root of the project
 python -m server.seed
 ```
 
+## 🔐 Authentication Flow
+
+- Register
+
+### POST /signup
+```json
+{
+  "username": "Roy",
+  "password": "testpassword123"
+}
+```
+
+- Login
+
+### POST /login
+```json
+{
+  "username": "Zoey",
+  "password": "testpassword123"
+}
+```
+- Response:
+```json
+{
+  "token": "<JWT_TOKEN>",
+  "user": {
+    "id": 1,
+    "username": "Zoey"
+  }
+}
+```
+## Token Usage
+- For all protected routes, add this header:
+![Authorization Header](/server/assets/Screenshot%20from%202025-06-23%2010-24-52.png "Bearer Token")
+
+## 📡 Route List & Sample Usage
+
+
 
