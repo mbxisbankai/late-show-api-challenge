@@ -135,7 +135,4 @@ Request
 Response
 ![Example Response](/server/assets/Pasted%20image.png)
 
-## 🔗 GitHub Repository
-
-[![GitHub Logo](image.png)](https://github.com/mbxisbankai/late-show-api-challenge)
 
