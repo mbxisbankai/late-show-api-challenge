@@ -70,6 +70,12 @@ Seed the database from the root of the project
 python -m server.seed
 ```
 
+Run the app
+```bash
+cd server/
+flask run
+```
+
 ## 🔐 Authentication Flow
 
 - Register
@@ -106,6 +112,28 @@ For all protected routes, add this header:
 ![Authorization Header](/server/assets/Screenshot%20from%202025-06-23%2010-24-52.png "Bearer Token")
 
 ## 📡 Route List & Sample Usage
+| Method | Route            | Description             | Auth Required  |
+| ------ | ---------------- | ----------------------- | -------------- |
+| POST   | `/signup`        | Register a new user     | ❌             |
+| POST   | `/login`         | Login and get JWT token | ❌             |
+| POST   | `/logout`        | Blacklist token         | ✅             |
+| GET    | `/guests`        | List all guests         | ❌             |
+| POST   | `/guests`        | Add a new guest         | ✅             |
+| GET    | `/episodes`      | List episodes           | ❌             |
+| DELETE | `/episodes/<id>` | Delete episode          | ✅             |
+| GET    | `/appearances`   | List appearances        | ❌             |
+| POST   | `/appearances`   | Add appearance          | ✅             |
 
+## Postman Usage Guide
+1. Open Postman
+2. Input a new collection or manually create requests.
 
+### Example Usage
+Request
+![Example Request](/server/assets/Screenshot%20from%202025-06-23%2010-44-33.png "Example Request")
 
+Response
+![Example Response](/server/assets/Pasted%20image.png)
+
+## 🔗 GitHub Repository
+![Github Link](https://github.com/mbxisbankailate-show-api-challenge "Github Repository")
